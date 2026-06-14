@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "YouAreAnIdiot Helper",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["*://*.youareanidiot.org/*", "*://*.youareanidiot.cc/*"],
+      "js": ["dontopenyouareanidiot.cc.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
